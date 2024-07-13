@@ -1,0 +1,56 @@
+/*-------------------------
+共通設定
+-------------------------*/
+.my-portfolio{
+  --bacground-color: #7B7D80;
+}
+
+/*-------------------------
+ヘッダー
+-------------------------*/
+.my-portfolio .header{
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  background-color: var(--bacground-color);
+}
+
+.my-portfolio .header__logo{
+  width: 73px;
+}
+
+.my-portfolio .header__logo img{
+  width: 100%;
+  height: auto;
+}
+
+.my-portfolio .header__menu{
+  display: flex;
+  align-items: center;
+}
+
+.my-portfolio .header__menu li{
+  font-size: 16px;
+  margin-inline: 10px;
+}
+
+
+/*-------------------------
+index.html
+-------------------------*/
+
+/*-------------------------
+profile.html
+-------------------------*/
+
+/*-------------------------
+gallery.html
+-------------------------*/
+
+/*-------------------------
+contact.html
+-------------------------*/
+
+/*-------------------------
+フッター
+-------------------------*/
