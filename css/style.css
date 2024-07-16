@@ -23,16 +23,21 @@
 ヘッダー
 -------------------------*/
 .my-portfolio .header{
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: var(--width-primary);
+  height: 130px;
   background-color: var(--bacground-color);
 }
 
+.my-portfolio .header__contents{
+  width: 1300px;
+  margin-inline: auto;
+}
+
 .my-portfolio .header__logo{
-  width: 73px;
+  width: 95px;
 }
 
 .my-portfolio .header__logo img{
