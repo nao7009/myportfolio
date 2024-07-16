@@ -23,15 +23,15 @@
 ヘッダー
 -------------------------*/
 .my-portfolio .header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   max-width: var(--width-primary);
   height: 130px;
   background-color: var(--bacground-color);
 }
 
 .my-portfolio .header__contents{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 1300px;
   margin-inline: auto;
 }
