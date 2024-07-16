@@ -3,15 +3,17 @@
 -------------------------*/
 .my-portfolio{
   --bacground-color: #7B7D80;
+  --font-ja: "Hiragino Mincho ProN",YuMincho,serif;
+  --font-en: "inria-serif", sans-serif;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   .my-portfolio{
     --width-primary: 1400px;
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 767px) {
   .my-portfolio{
     --width-primary: 750px;
   }
@@ -44,13 +46,14 @@
 }
 
 .my-portfolio .header__menu li{
+  font-family: var(--font-en);
   font-size: 16px;
   margin-inline: 10px;
 }
 
 
 /*-------------------------
-index.html
+MV
 -------------------------*/
 .my-portfolio .mv{
   position: relative;
@@ -59,16 +62,66 @@ index.html
 .my-portfolio .mv__text{
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* -webkit-transform: translate(-50%, -50%); */
+  /* -ms-transform: translate(-50%, -50%); */
+  font-family: var(--font-en);
   font-size: 100px;
   color: #fff;
 }
 
 .my-portfolio .mv__image{
-  max-width: var(--width-primary);
+  width: var(--width-primary);
+}
+
+
+/*-------------------------
+index.html
+-------------------------*/
+.my-portfolio .about__text{
+  margin-top: 30px;
+  font-family: var(--font-ja);
+  font-size: 26px;
+  text-align: center;
+}
+
+.my-portfolio .content-wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.my-portfolio .content__item{
+  position: relative;
+}
+
+.my-portfolio .content__image{
+  width: 650px;
+}
+
+.my-portfolio .content__text p:nth-of-type(1){
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--font-en);
+  font-size: 40px;
+}
+
+.my-portfolio .content__text p:nth-of-type(2){
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--font-ja);
+  font-size: 16px;
+}
+
+.my-portfolio .content__text p:nth-of-type(3){
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: var(--font-en);
+  font-size: 25px;
 }
 
 
