@@ -177,12 +177,15 @@ contact.html
 -------------------------*/
 .my-portfolio .footer{
   width: 100%;
+  margin-top: 80px;
   /* max-width: var(--width-primary); */
   height: 130px;
   background-color: var(--bacground-color);
 }
 
 .my-portfolio .footer p{
+  padding-top: 55px;
+  padding-bottom: 55px;
   font-size: 18px;
   color: #fff;
   text-align: center;
