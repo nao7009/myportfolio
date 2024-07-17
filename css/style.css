@@ -25,9 +25,11 @@
 .my-portfolio .header{
   position: fixed;
   top: 0;
-  max-width: var(--width-primary);
+  width: 100%;
+  /* max-width: var(--width-primary); */
   height: 130px;
   background-color: var(--bacground-color);
+  z-index: 99;
 }
 
 .my-portfolio .header__contents{
@@ -70,18 +72,19 @@ MV
 
 .my-portfolio .mv__text{
   position: absolute;
-  top: 50%;
-  left: 25%;
+  top: 48%;
+  left: 24%;
   /* transform: translate(-50%, -50%); */
   /* -webkit-transform: translate(-50%, -50%); */
   /* -ms-transform: translate(-50%, -50%); */
   font-family: var(--font-en);
   font-size: 100px;
+  font-feature-settings: "palt";
   color: #fff;
 }
 
 .my-portfolio .mv__image{
-  width: var(--width-primary);
+  max-width: var(--width-primary);
 }
 
 
@@ -89,13 +92,21 @@ MV
 index.html
 -------------------------*/
 .my-portfolio .about__text{
-  margin-top: 30px;
+  margin-top: 150px;
   font-family: var(--font-ja);
-  font-size: 26px;
+  font-size: 36px;
+  line-height: 1.5;
+  font-feature-settings: "palt";
   text-align: center;
 }
 
 .my-portfolio .content-wrapper{
+  margin-top: 140px;
+  margin-inline: auto;
+  width: 1333px;
+}
+
+.my-portfolio .flex-wrapper{
   display: flex;
   justify-content: space-between;
   flex-direction: row;
