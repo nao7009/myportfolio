@@ -37,26 +37,37 @@
     </section>
 
     <section class="contact">
-      <form action="#">
-        <label for="name" class="name">
-          お名前
-          <input type="text" name="name">
-        </label>
-
-        <label for="mail" class="mail">
-          E-mail
-          <input type="mail" name="mail">
-        </label>
-
-        <label for="tel" class="tel">
-          電話番号
-          <input type="tel" name="tel">
-        </label>
-
-        <label for="" class="name">
-          お問い合わせ内容
-          <textarea name="text" id=""></textarea>
-        </label>
+      <h2 class="section__title">Contact</h2>
+      <p>お気軽にお問い合わせください。</p>
+      <form action="#" method="post">
+          <div class="form__item item01">
+            <label for="name" class="name">
+              名
+              <input type="text" id="name" name="name">
+            </label>
+            <label for="name" class="name">
+              姓
+              <input type="text" id="name" name="name">
+            </label>
+          </div>
+          <div class="form__item item02">
+            <label for="mail" class="mail">
+              E-mail
+              <input type="mail" id="mail" name="mail">
+            </label>
+          </div>
+          <div class="form__item item03">
+            <label for="tel" class="tel">
+              電話番号
+              <input type="tel" name="tel">
+            </label>
+          </div>
+          <div class="form__item">
+            <label for="" class="name">
+              お問い合わせ内容
+              <textarea name="text" id=""></textarea>
+            </label>
+          </div>
       </form>
     </section>
   </main>

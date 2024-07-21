@@ -250,13 +250,69 @@ profile.html
 /* ===============================================###
 gallery.html
 ###=============================================== */
+/* ===========### banner ###=========== */
+.my-portfolio .banner{
+  width: 1100px;
+  margin-inline: auto;
+}
 
+.my-portfolio .banner .flex-wrapper{
+  margin-top: 20px;
+}
+
+/*** text ***/
+.my-portfolio .banner .section__title{
+  margin-top: 80px;
+}
+
+/*** image ***/
+.my-portfolio .banner .content__image{
+  width: 300px;
+}
+
+/* ===========### LP ###=========== */
+.my-portfolio .lp{
+  width: 1100px;
+  margin-top: 80px;
+  margin-inline: auto;
+}
+
+.my-portfolio .lp .flex-wrapper{
+  margin-top: 20px;
+}
+
+.my-portfolio .lp .content__image{
+  width: 205px;
+}
 
 
 /* ===============================================###
 contact.html
 ###=============================================== */
+.my-portfolio .contact{
+  width: 750px;
+  margin-inline: auto;
+}
 
+.my-portfolio .contact .section__title{
+  margin-top: 80px;
+}
+
+.my-portfolio .contact p{
+  margin-top: 20px;
+  font-family: var(--font-ja);
+  font-size: 26px;
+  text-align: center;
+}
+
+/*** form ***/
+.my-portfolio .contact .form__item{
+  margin-top: 20px;
+}
+
+.my-portfolio .contact input{
+  border-bottom: 1px solid #000;
+}
 
 
 /* ===============================================###
