@@ -309,8 +309,13 @@ contact.html
 }
 
 /*** form ***/
+.my-portfolio .contact form{
+  width: 540px;
+  margin-inline: auto;
+}
+
 .my-portfolio .contact .form__item{
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .my-portfolio .contact input{
