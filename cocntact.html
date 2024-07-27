@@ -13,7 +13,7 @@
   <header class="header">
     <div class="header__contents">
       <div class="header__logo">
-        <a href="#">
+        <a href="./index.html">
           <img src="./img/home_icon.svg" alt="HOME_icon" width="88" height="89">
         </a>
       </div>
@@ -28,46 +28,40 @@
   </header>
 
 
-  <main>
+  <main class="contact">
     <section class="mv">
       <p class="mv__text">Contact</p>
-      <div class="mv__image">
+      <!-- <div class="mv__image">
         <img src="./img/mv_contact.jpg" alt="mv" width="1400" height="496" decoding="async">
-      </div>
+      </div> -->
     </section>
 
     <section class="contact">
       <h2 class="section__title">Contact</h2>
       <p>お気軽にお問い合わせください。</p>
       <form action="#" method="post">
-          <div class="form__item item01">
-            <label for="name" class="name">
-              名
+
+          <div class="form__item item01 flex-wrapper">
+            <div class="last-name">
+              <label for="last-name" class="last-name">姓</label>
+              <input type="text" id="last-name" name="last-name">
+            </div>
+            <div class="name">
+              <label for="name" class="name">名</label>
               <input type="text" id="name" name="name">
-            </label>
-            <label for="name" class="name">
-              姓
-              <input type="text" id="name" name="name">
-            </label>
+            </div>
           </div>
+
           <div class="form__item item02">
-            <label for="mail" class="mail">
-              E-mail
-              <input type="mail" id="mail" name="mail">
-            </label>
+            <label for="mail" class="mail">メールアドレス&#42;</label>
+            <input type="mail" id="mail" name="mail" required>
           </div>
-          <div class="form__item item03">
-            <label for="tel" class="tel">
-              電話番号
-              <input type="tel" name="tel">
-            </label>
-          </div>
+
           <div class="form__item">
-            <label for="" class="name">
-              お問い合わせ内容
-              <textarea name="text" id=""></textarea>
-            </label>
+            <label for="" class="name">メッセージを入力</label>
+            <textarea name="text" id=""></textarea>
           </div>
+
           <div class="form__item">
             <button type="submit">送信する</button>
           </div>

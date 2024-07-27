@@ -2,6 +2,7 @@
 共通設定
 ###=============================================== */
 .my-portfolio{
+  background-color: #FAFAFA;
   --bacground-color: #7B7D80;
   --font-ja: "Hiragino Mincho ProN",YuMincho,serif;
   --font-en: "inria-serif", sans-serif;
@@ -71,29 +72,58 @@
 MV
 ###=============================================== */
 .my-portfolio .mv{
-  position: relative;
-  /* max-width: var(--width-primary); */
   width: 100%;
 }
 
+/************** image **************/
+/*** ページごとの背景画像設定 ***/
+.my-portfolio .main .mv{
+  height: 900px;
+  background-image: url(../img/mv_home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.my-portfolio .profile .mv{
+  height: 496px;
+  background-image: url(../img/mv_profile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.my-portfolio .gallery .mv{
+  height: 496px;
+  background-image: url(../img/mv_gallery.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.my-portfolio .contact .mv{
+  height: 496px;
+  background-image: url(../img/mv_contact.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/************** text **************/
 .my-portfolio .mv__text{
-  position: absolute;
-  top: 48%;
-  left: 24%;
-  /* transform: translate(-50%, -50%); */
-  /* -webkit-transform: translate(-50%, -50%); */
-  /* -ms-transform: translate(-50%, -50%); */
   font-family: var(--font-en);
   font-size: 96px;
   font-feature-settings: "palt";
+  text-align: center;
   color: #fff;
 }
 
-.my-portfolio .mv__image{
-  /* max-width: var(--width-primary); */
-  width: 100%;
+/*** ページごとの微調整 ***/
+.my-portfolio .main .mv__text{
+  padding-top: 410px;
 }
 
+.my-portfolio .profile .mv__text,
+.my-portfolio .gallery .mv__text,
+.my-portfolio .contact .mv__text{
+  padding-top: 250px;
+}
 
 
 /* ===============================================###
@@ -310,7 +340,7 @@ contact.html
 
 /*** form ***/
 .my-portfolio .contact form{
-  width: 540px;
+  width: 400px;
   margin-inline: auto;
 }
 
@@ -318,8 +348,53 @@ contact.html
   margin-top: 50px;
 }
 
+.my-portfolio .contact input, label{
+  display: block;
+}
+
 .my-portfolio .contact input{
+  width: 100%;
+  margin-top: 15px;
   border-bottom: 1px solid #000;
+}
+
+.my-portfolio .contact textarea{
+  width: 100%;
+  height: 100px;
+  margin-top: 15px;
+  border-bottom: 1px solid #000;
+}
+
+.my-portfolio .contact button{
+  position: relative;
+  width: 130px;
+  height: 40px;
+  border-radius: 10%;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+}
+
+.my-portfolio .contact button:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.my-portfolio .contact button:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 50%;
 }
 
 
