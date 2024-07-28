@@ -352,11 +352,11 @@ contact.html
   margin-inline: auto;
 }
 
-.my-portfolio .contact .section__title{
+.my-portfolio .contact_form .section__title{
   margin-top: 80px;
 }
 
-.my-portfolio .contact p{
+.my-portfolio .contact_form p{
   margin-top: 20px;
   font-family: var(--font-ja);
   font-size: 26px;
@@ -364,33 +364,33 @@ contact.html
 }
 
 /*** form ***/
-.my-portfolio .contact form{
+.my-portfolio .contact_form form{
   width: 400px;
   margin-inline: auto;
 }
 
-.my-portfolio .contact .form__item{
+.my-portfolio .contact_form .form__item{
   margin-top: 50px;
 }
 
-.my-portfolio .contact input, label{
+.my-portfolio .contact_form input, label{
   display: block;
 }
 
-.my-portfolio .contact input{
+.my-portfolio .contact_form input{
   width: 100%;
   margin-top: 15px;
   border-bottom: 1px solid #000;
 }
 
-.my-portfolio .contact textarea{
+.my-portfolio .contact_form textarea{
   width: 100%;
   height: 100px;
   margin-top: 15px;
   border-bottom: 1px solid #000;
 }
 
-.my-portfolio .contact button{
+.my-portfolio .contact_form button{
   position: relative;
   width: 130px;
   height: 40px;
@@ -400,7 +400,7 @@ contact.html
   text-align: center;
 }
 
-.my-portfolio .contact button:before{
+.my-portfolio .contact_form button:before{
   content: '';
   position: absolute;
   top: 0;
@@ -411,7 +411,7 @@ contact.html
   border-radius: 50%;
 }
 
-.my-portfolio .contact button:after{
+.my-portfolio .contact_form button:after{
   content: '';
   position: absolute;
   top: 0;
