@@ -14,18 +14,12 @@
   height: auto;
 }
 
-@media screen and (min-width: 768px) {
-  .my-portfolio{
-    --width-primary: 1400px;
-  }
-}
-
+/*** SP版用設定 ***/
 @media screen and (max-width: 767px) {
-  .my-portfolio{
-    --width-primary: 750px;
+  .sp-visible{
+    display: block;
   }
 }
-
 
 
 /* ===============================================###
@@ -35,7 +29,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  /* max-width: var(--width-primary); */
   height: 130px;
   background-color: var(--bacground-color);
   z-index: 99;
@@ -45,15 +38,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1366px;
+  width: 95%;
   margin-inline: auto;
   padding-top: 20px;
 }
 
+/*** image ***/
 .my-portfolio .header__logo{
   width: 90px;
 }
 
+/*** text ***/
 .my-portfolio .header__menu ul{
   display: flex;
   align-items: center;
@@ -66,6 +61,29 @@
   margin-inline: 40px;
 }
 
+/* ===========### responsive ###=========== */
+@media screen and (max-width: 767px) {
+  .my-portfolio .header{
+    height: 80px;
+  }
+
+  .my-portfolio .header__contents{
+    gap: 30px;
+    width: 90%;
+    padding-top: 15px;
+  }
+
+  /*** image ***/
+  .my-portfolio .header__logo{
+    width: 50px;
+  }
+
+  /*** text ***/
+  .my-portfolio .header__menu li{
+    font-size: 16px;
+    margin-inline: 20px;
+  }
+}
 
 
 /* ===============================================###
@@ -75,8 +93,7 @@ MV
   width: 100%;
 }
 
-/************** image **************/
-/*** ページごとの背景画像設定 ***/
+/*** image / ページごとの背景画像設定 ***/
 .my-portfolio .main .mv{
   height: 900px;
   background-image: url(../img/mv_home.jpg);
@@ -129,6 +146,46 @@ MV
   padding-top: 250px;
 }
 
+/* ===========### responsive ###=========== */
+@media screen and (max-width: 767px) {
+  /*** image / ページごとの背景画像設定 ***/
+  .my-portfolio .main .mv{
+    height: 500px;
+  }
+
+  .my-portfolio .profile .mv{
+    height: 300px;
+  }
+
+  .my-portfolio .gallery .mv{
+    height: 300px;
+  }
+
+  .my-portfolio .contact .mv{
+    height: 300px;
+  }
+
+  /************** text **************/
+  .my-portfolio .mv__text{
+    font-size: 40px;
+  }
+
+  .my-portfolio .gallery .mv__text{
+    color: #fff;
+  }
+
+  /*** ページごとの微調整 ***/
+  .my-portfolio .main .mv__text{
+    padding-top: 250px;
+  }
+
+  .my-portfolio .profile .mv__text,
+  .my-portfolio .gallery .mv__text,
+  .my-portfolio .contact .mv__text{
+    padding-top: 175px;
+  }
+}
+
 
 /* ===============================================###
 各ページ共通設定
@@ -137,7 +194,7 @@ MV
 .my-portfolio .flex-wrapper{
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: row;
 }
 
@@ -148,11 +205,22 @@ MV
   text-align: center;
 }
 
+/* ===========### responsive ###=========== */
+@media screen and (max-width: 767px) {
+  /*** flex ***/
+  .my-portfolio .flex-wrapper{
+    flex-direction: column;
+  }
 
+  /*** text ***/
+  .my-portfolio .section__title{
+    font-size: 28px;
+  }
+}
 
 
 /* ===============================================###
-index.html
+index.html（main設定）
 ###=============================================== */
 .my-portfolio .about__text{
   margin-top: 150px;
@@ -188,11 +256,6 @@ index.html
   pointer-events: none;
 }
 
-.my-portfolio .content__image{
-  /* width: 469px; */
-  /* width: fit-content; */
-}
-
 .my-portfolio .main .item01{
   background-image: url(../img/link_image_profile.jpg);
   background-size: cover;
@@ -202,7 +265,6 @@ index.html
   background-image: url(../img/link_image_gallery.jpg);
   background-size: cover;
 }
-
 
 .my-portfolio .main .content__text p:nth-of-type(1){
   position: absolute;
@@ -240,9 +302,57 @@ index.html
   z-index: 1;
 }
 
+/* ===========### responsive ###=========== */
+@media screen and (max-width: 767px) {
+  .my-portfolio .about__text{
+    margin-top: 60px;
+    font-size: 16px;
+  }
+
+  .my-portfolio .content-wrapper{
+    margin-top: 60px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  .my-portfolio .content__item{
+    width: 300px;
+    height: 300px;
+    margin-inline: auto;
+  }
+
+  .my-portfolio .content__item.item02{
+    margin-top: 15px;
+  }
+
+  .my-portfolio .main .content__text p:nth-of-type(1){
+    top: 45%;
+    left: 33%;
+    font-size: 30px;
+  }
+
+  .my-portfolio .main .item01 .content__text p:nth-of-type(2){
+    top: 60%;
+    left: 32%;
+    font-size: 12px;
+  }
+
+  .my-portfolio .main .item02 .content__text p:nth-of-type(2){
+    top: 60%;
+    left: 37%;
+    font-size: 12px;
+  }
+
+  .my-portfolio .main .content__text p:nth-of-type(3){
+    bottom: 5%;
+    right: 5%;
+    font-size: 12px;
+  }
+}
+
 
 /* ===============================================###
-profile.html
+profile.html（main設定）
 ###=============================================== */
 /* ===========### profile ###=========== */
 .my-portfolio .profile__item{
@@ -303,19 +413,52 @@ profile.html
   text-align: center;
 }
 
+/* ===========### responsive ###=========== */
+@media screen and (max-width: 767px) {
+  /* ===========### profile ###=========== */
+  .my-portfolio .profile__item{
+    width: 90%;
+    margin-top: 15px;
+  }
+
+  /*** text ***/
+  .my-portfolio .profile .section__title{
+    margin-top: 40px;
+  }
+
+  .my-portfolio .profile__text{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /*** image ***/
+  .my-portfolio .profile__image{
+    width: 200px;
+  }
+
+
+  /* ===========### skills ###=========== */
+  .my-portfolio .skills{
+    width: 90%;
+  }
+}
 
 
 /* ===============================================###
-gallery.html
+gallery.html（main設定）
 ###=============================================== */
 /* ===========### banner ###=========== */
 .my-portfolio .banner{
-  width: 1100px;
+  width: 95%;
   margin-inline: auto;
 }
 
 .my-portfolio .banner .flex-wrapper{
   margin-top: 20px;
+  gap: 30px;
 }
 
 /*** text ***/
@@ -330,7 +473,7 @@ gallery.html
 
 /* ===========### LP ###=========== */
 .my-portfolio .lp{
-  width: 1100px;
+  width: 95%;
   margin-top: 80px;
   margin-inline: auto;
 }
@@ -343,9 +486,51 @@ gallery.html
   width: 205px;
 }
 
+/* ===========### responsive ###=========== */
+@media screen and (max-width: 767px) {
+  /* ===========### banner ###=========== */
+  .my-portfolio .banner{
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .my-portfolio .banner .flex-wrapper{
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  /*** text ***/
+  .my-portfolio .banner .section__title{
+    margin-top: 40px;
+  }
+
+  /*** image ***/
+  .my-portfolio .banner .content__image{
+    width: 150px;
+    margin-inline: auto;
+  }
+
+  /* ===========### LP ###=========== */
+  .my-portfolio .lp{
+    width: 90%;
+    margin-top: 60px;
+  }
+
+  .my-portfolio .lp .flex-wrapper{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .my-portfolio .lp .content__image{
+    width: 100px;
+  }
+}
 
 /* ===============================================###
-contact.html
+contact.html（main設定）
 ###=============================================== */
 .my-portfolio .contact_form{
   width: 750px;
@@ -422,6 +607,54 @@ contact.html
   border-radius: 50%;
 }
 
+/* ===========### responsive ###=========== */
+@media screen and (max-width: 767px) {
+  .my-portfolio .contact_form{
+    width: 90%;
+  }
+
+  .my-portfolio .contact_form .section__title{
+    margin-top: 40px;
+  }
+
+  .my-portfolio .contact_form p{
+    margin-top: 15px;
+    font-size: 18px;
+  }
+
+  /*** form ***/
+  .my-portfolio .contact_form form{
+    width: 100%;
+  }
+
+  .my-portfolio .contact_form .form__item{
+    margin-top: 30px;
+  }
+
+  .my-portfolio .contact_form input{
+    margin-top: 15px;
+  }
+
+  .my-portfolio .contact .name{
+    margin-top: 15px;
+  }
+
+  .my-portfolio .contact_form button{
+    width: 110px;
+    height: 35px;
+  }
+
+  .my-portfolio .contact_form button:before{
+    width: 35px;
+    height: 35px;
+  }
+
+  .my-portfolio .contact_form button:after{
+    width: 35px;
+    height: 35px;
+  }
+}
+
 
 /* ===============================================###
 フッター
@@ -429,7 +662,6 @@ contact.html
 .my-portfolio .footer{
   width: 100%;
   margin-top: 80px;
-  /* max-width: var(--width-primary); */
   height: 130px;
   background-color: var(--bacground-color);
 }
@@ -440,4 +672,18 @@ contact.html
   font-size: 18px;
   color: #fff;
   text-align: center;
+}
+
+/* ===========### responsive ###=========== */
+@media screen and (max-width: 767px) {
+  .my-portfolio .footer{
+    margin-top: 60px;
+    height: 80px;
+  }
+
+  .my-portfolio .footer p{
+    padding-top: 35px;
+    padding-bottom: 24px;
+    font-size: 16px;
+  }
 }
