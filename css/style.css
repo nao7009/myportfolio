@@ -114,6 +114,10 @@ MV
   color: #fff;
 }
 
+.my-portfolio .gallery .mv__text{
+  color: #000;
+}
+
 /*** ページごとの微調整 ***/
 .my-portfolio .main .mv__text{
   padding-top: 410px;
@@ -259,7 +263,8 @@ profile.html
 .my-portfolio .profile__text{
   width: 463px;
   font-family: var(--font-ja);
-  font-size: 26px;
+  font-size: 24px;
+  line-height: 1.5;
 }
 
 /*** image ***/
@@ -285,16 +290,16 @@ profile.html
 
 /*** text ***/
 .my-portfolio .skill__item p:nth-of-type(1){
-  margin-top: 40px;
+  margin-top: 100px;
   font-family: var(--font-en);
   font-size: 20px;
   text-align: center;
 }
 
 .my-portfolio .skill__item p:nth-of-type(2){
-  margin-top: 20px;
+  margin-top: 30px;
   font-family: var(--font-ja);
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
 }
 
