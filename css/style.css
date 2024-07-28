@@ -669,6 +669,7 @@ contact.html（main設定）
 .my-portfolio .footer p{
   padding-top: 55px;
   padding-bottom: 55px;
+  font-family: var(--font-en);
   font-size: 18px;
   color: #fff;
   text-align: center;
